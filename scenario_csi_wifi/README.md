@@ -55,7 +55,10 @@ Input (104 CSI features, 150 timesteps)
   → Fully Connected (4 classes)
 ```
 
+## Dataset
+CSI Human Activity dataset 
 
+https://ieee-dataport.org/open-access/csi-human-activity
 ## Data Format
 
 - **CSI shape**: `(n_samples, 150, 104)` — 150 time steps, 104 subcarrier features
