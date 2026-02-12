@@ -63,7 +63,7 @@ Input (104 CSI features, 150 timesteps)
 - **Labels**: Integer 0–3 corresponding to EMPTY, SIT, STAND, WALK
 
 ## Requirements
-- - MATLAB R2020b+ with Deep Learning Toolbox
+- MATLAB R2020b+ with Deep Learning Toolbox
 - `CSIReader()` function for PCAP parsing (step 1 only)
 - Python 3.8+
 - PyTorch 1.10+
