@@ -1,3 +1,6 @@
+MATLAB R2020b+ with Deep Learning Toolbox
+`CSIReader()` function for PCAP parsing (step 1 only)
+
 numpy>=1.21.0
 scipy>=1.7.0
 torch>=1.10.0
