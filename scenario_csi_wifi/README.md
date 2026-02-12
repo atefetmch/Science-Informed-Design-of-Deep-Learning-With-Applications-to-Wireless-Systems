@@ -11,7 +11,6 @@ LSTM-based human activity recognition using Channel State Information (CSI) from
 | 2 | STAND |
 | 3 | WALK |
 
-```bash
 # Install dependencies
 pip install -r requirements.txt
 
@@ -47,7 +46,6 @@ All three methods use L-infinity norm constraint: `||d||_inf <= alpha`
 
 
 ## Model Architecture
-
 ```
 Input (104 CSI features, 150 timesteps)
   → LSTM Layer 1 (128 hidden units, sequence output)
@@ -57,19 +55,6 @@ Input (104 CSI features, 150 timesteps)
   → Fully Connected (4 classes)
 ```
 
-## File Descriptions
-
-| File | Purpose |
-|------|---------|
-| `load_matlab_csi_data.py` | Load CSI data from MATLAB .mat format |
-| `csi_augmentation.py` | CSI augmentation functions (SNR noise, phase noise, etc.) |
-| `create_augmented_dataset.py` | Apply augmentations to create training data |
-| `prepare_lstm_data_pytorch.py` | Stratified split and PyTorch DataLoader creation |
-| `lstm_csi_classifier_pytorch.py` | LSTM model definition and training/testing functions |
-| `train_csi_lstm_pytorch.py` | Complete training script |
-| `csi_domain_shift_analysis.py` | L-inf norm domain shift functions |
-| `create_target_domain.py` | Generate target domain with L-inf perturbations |
-| `test_on_target_domain.py` | Evaluate trained model under domain shift |
 
 ## Data Format
 
